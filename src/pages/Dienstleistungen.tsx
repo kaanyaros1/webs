@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Truck, Shield, Clock, Star, Recycle, Home } from "lucide-react";
+import { Truck, Shield, Clock, Star, Recycle, Home, Sparkles, Wrench, Leaf, Package, Building2, Lock, Calendar } from "lucide-react";
 
 const services = [
   { icon: Truck, title: "Wohnungsauflösung", desc: "Komplette Räumung und Auflösung von Wohnungen jeder Größe. Wir kümmern uns um alles – von der Planung bis zur besenreinen Übergabe." },
@@ -8,6 +8,15 @@ const services = [
   { icon: Star, title: "Nachlassräumung", desc: "Einfühlsame und diskrete Nachlassräumung. Wir gehen respektvoll mit dem Besitz Ihrer Angehörigen um." },
   { icon: Recycle, title: "Sperrmüllentsorgung", desc: "Fachgerechte Entsorgung von Sperrmüll und Altgeräten. Umweltgerecht und nach allen Vorschriften." },
   { icon: Home, title: "Renovierung nach Räumung", desc: "Auf Wunsch übernehmen wir auch Renovierungsarbeiten nach der Räumung für eine einzugsfertige Wohnung." },
+  { icon: Truck, title: "Umzugsservice", desc: "Komplette Unterstützung bei Umzügen – vom Verpacken bis zum Transport. Sicher, effizient und stressfrei." },
+  { icon: Sparkles, title: "Endreinigung / Grundreinigung", desc: "Gründliche Reinigung nach Räumung oder Umzug. Für eine besenreine oder schlüsselfertige Übergabe Ihrer Immobilie." },
+  { icon: Wrench, title: "Kleinreparaturen", desc: "Wir übernehmen kleinere Reparaturen wie Streichen, Spachteln oder Ausbesserungen – schnell und zuverlässig." },
+  { icon: Leaf, title: "Garten- & Außenbereichsreinigung", desc: "Entrümpelung und Reinigung von Gärten, Höfen und Außenflächen. Auch Schnittarbeiten und Entsorgung von Grünschnitt." },
+  { icon: Package, title: "Verpackungsservice", desc: "Sicheres Verpacken von Möbeln, Geschirr und Wertgegenständen für Transport oder Einlagerung." },
+  { icon: Building2, title: "Firmenauflösung", desc: "Komplette Auflösung von Büros, Lagern und Gewerbeobjekten – inklusive Entsorgung und Übergabe." },
+  { icon: Lock, title: "Diskrete Spezialräumung", desc: "Diskrete und professionelle Räumung in sensiblen Situationen. Respektvoll, schnell und zuverlässig." },
+  { icon: Recycle, title: "Recycling & Wertanrechnung", desc: "Verwertbare Gegenstände werden angerechnet oder recycelt – umweltfreundlich und kostensparend." },
+  { icon: Calendar, title: "Express-Service (24h)", desc: "Kurzfristige Termine möglich – schnelle Hilfe bei dringenden Räumungen und Entrümpelungen." },
 ];
 
 const Dienstleistungen = () => (
