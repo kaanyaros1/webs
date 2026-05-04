@@ -12,7 +12,7 @@ const Impressum = () => (
           </div>
           <div>
             <h2 className="text-xl font-bold text-foreground">Kontakt</h2>
-            <p>Telefon: 030 123 456 789<br />E-Mail: info@bsr-wohnungsaufloesung.de</p>
+            <p>Telefon: 030 208 482 810<br />E-Mail: info@wohnungsaufloesung-bsr.de</p>
           </div>
           <div>
             <h2 className="text-xl font-bold text-foreground">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>

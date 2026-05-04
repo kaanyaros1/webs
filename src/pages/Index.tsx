@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, ArrowRight, CheckCircle, Star, ClipboardList, Eye, Truck, Sparkles, Home, Package, Trash2, Users } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, CheckCircle, Star, ClipboardList, Eye, Truck, Sparkles, Home, Package, Trash2, Users, MapPin } from "lucide-react";
 import heroImg from "@/assets/hero-entruempelung.jpg";
-import leistungenImg from "@/assets/leistungen-arbeit.jpg";
-import preiseImg from "@/assets/preise-beratung.jpg";
-import vorherNachherImg from "@/assets/vorher-nachher.jpg";
+import leistungenImg from "@/assets/team-moebel-transporter.jpg";
+import preiseImg from "@/assets/team-sperrmuell-lkw.jpg";
+import vorherNachherImg from "@/assets/team-keller-entruempelung.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -47,10 +47,10 @@ const Index = () => (
             Wir sind Ihr professioneller Ansprechpartner für Wohnungsauflösungen, Entrümpelungen und Sperrmüll-Abholungen in ganz Berlin. Unser erfahrenes Team arbeitet schnell, diskret und zuverlässig – egal ob kleine Wohnung oder kompletter Haushalt.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+4930123456789" className="inline-flex items-center justify-center gap-2 bg-foreground text-background px-6 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
+            <a href="tel:+4930208482810" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary border-2 border-primary-foreground px-6 py-3.5 rounded font-bold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">
               <Phone className="w-5 h-5" /> Jetzt anrufen
             </a>
-            <a href="https://wa.me/4930123456789" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[hsl(142,70%,38%)] text-primary-foreground px-6 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
+            <a href="https://wa.me/4915216118885" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[hsl(142,70%,38%)] text-primary-foreground px-6 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
               <MessageCircle className="w-5 h-5" /> WhatsApp Anfrage
             </a>
             <Link to="/kontakt" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-foreground px-6 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
@@ -216,6 +216,29 @@ const Index = () => (
             Alle Standorte ansehen <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
+        <div className="mt-12 rounded-lg overflow-hidden border-2 border-border shadow-lg relative">
+          <iframe
+            title="BSR Wohnungsauflösung Berlin – Google Maps"
+            src="https://www.google.com/maps?q=BSR+Wohnungsauflösung+%26+Entrümpelung+Berlin+-+Sperrmüll+Abholung,+Seestraße+40,+13353+Berlin&output=embed"
+            width="100%"
+            height="350"
+            style={{ border: 0, pointerEvents: "none" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          <a
+            href="https://maps.app.goo.gl/RonPZ4wWWd1cLhDZ7?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="BSR Wohnungsauflösung auf Google Maps ansehen"
+            className="absolute inset-0 flex items-end justify-center pb-4 bg-foreground/0 hover:bg-foreground/10 transition-colors"
+          >
+            <span className="bg-primary text-primary-foreground px-5 py-2.5 rounded font-bold text-sm shadow-lg flex items-center gap-2">
+              <MapPin className="w-4 h-4" /> Auf Google Maps öffnen
+            </span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -330,10 +353,10 @@ const Index = () => (
           Kontaktieren Sie uns jetzt für eine kostenlose Beratung und ein unverbindliches Angebot.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="tel:+4930123456789" className="inline-flex items-center justify-center gap-2 bg-foreground text-background px-8 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
+          <a href="tel:+4930208482810" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary border-2 border-primary-foreground px-8 py-3.5 rounded font-bold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">
             <Phone className="w-5 h-5" /> Jetzt anrufen
           </a>
-          <a href="https://wa.me/4930123456789" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[hsl(142,70%,38%)] text-primary-foreground px-8 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
+          <a href="https://wa.me/4915216118885" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[hsl(142,70%,38%)] text-primary-foreground px-8 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">
             <MessageCircle className="w-5 h-5" /> WhatsApp schreiben
           </a>
           <Link to="/kontakt" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-foreground px-8 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity">

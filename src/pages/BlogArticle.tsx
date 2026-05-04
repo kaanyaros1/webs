@@ -99,12 +99,12 @@ const BlogArticle = () => {
                 Kontaktieren Sie uns für ein unverbindliches Angebot – schnell und unkompliziert.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+4930123456789">
+                <a href="tel:+4930208482810">
                   <Button size="lg" className="w-full sm:w-auto">
                     <Phone className="w-4 h-4 mr-2" /> Jetzt anrufen
                   </Button>
                 </a>
-                <a href="https://wa.me/4930123456789" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/4915216118885" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                     <MessageCircle className="w-4 h-4 mr-2" /> WhatsApp
                   </Button>

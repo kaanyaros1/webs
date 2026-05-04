@@ -23,17 +23,17 @@ const Kontakt = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Kontaktdaten */}
             <div className="space-y-6">
-              <a href="tel:+4930123456789" className="flex items-center gap-4 bg-card border border-border rounded-lg p-6 hover:border-primary/30 hover:shadow-md transition-all">
+              <a href="tel:+4930208482810" className="flex items-center gap-4 bg-card border border-border rounded-lg p-6 hover:border-primary/30 hover:shadow-md transition-all">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <div className="font-bold">Telefon</div>
-                  <div className="text-muted-foreground">030 123 456 789</div>
+                  <div className="text-muted-foreground">030 208 482 810</div>
                 </div>
               </a>
 
-              <a href="https://wa.me/4930123456789" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-card border border-border rounded-lg p-6 hover:border-primary/30 hover:shadow-md transition-all">
+              <a href="https://wa.me/4915216118885" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-card border border-border rounded-lg p-6 hover:border-primary/30 hover:shadow-md transition-all">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <MessageCircle className="w-6 h-6 text-primary" />
                 </div>
@@ -43,13 +43,13 @@ const Kontakt = () => {
                 </div>
               </a>
 
-              <a href="mailto:info@bsr-wohnungsaufloesung.de" className="flex items-center gap-4 bg-card border border-border rounded-lg p-6 hover:border-primary/30 hover:shadow-md transition-all">
+              <a href="mailto:info@wohnungsaufloesung-bsr.de" className="flex items-center gap-4 bg-card border border-border rounded-lg p-6 hover:border-primary/30 hover:shadow-md transition-all">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <div className="font-bold">E-Mail</div>
-                  <div className="text-muted-foreground">info@bsr-wohnungsaufloesung.de</div>
+                  <div className="text-muted-foreground">info@wohnungsaufloesung-bsr.de</div>
                 </div>
               </a>
 
@@ -64,17 +64,28 @@ const Kontakt = () => {
               </div>
 
               {/* Google Maps */}
-              <div className="rounded-lg overflow-hidden border border-border">
+              <div className="rounded-lg overflow-hidden border border-border relative">
                 <iframe
-                  title="Standort Berlin"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155422.2574!2d13.2846504!3d52.5069296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sde!2sde!4v1680000000000"
+                  title="BSR Wohnungsauflösung Berlin – Standort auf Google Maps"
+                  src="https://www.google.com/maps?q=BSR+Wohnungsauflösung+%26+Entrümpelung+Berlin+-+Sperrmüll+Abholung,+Seestraße+40,+13353+Berlin&output=embed"
                   width="100%"
                   height="250"
-                  style={{ border: 0 }}
+                  style={{ border: 0, pointerEvents: "none" }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
+                <a
+                  href="https://maps.app.goo.gl/RonPZ4wWWd1cLhDZ7?g_st=ic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Auf Google Maps öffnen"
+                  className="absolute inset-0 flex items-end justify-center pb-3 bg-foreground/0 hover:bg-foreground/10 transition-colors"
+                >
+                  <span className="bg-primary text-primary-foreground px-4 py-2 rounded font-bold text-sm shadow-lg flex items-center gap-2">
+                    <MapPin className="w-4 h-4" /> Auf Google Maps öffnen
+                  </span>
+                </a>
               </div>
             </div>
 
