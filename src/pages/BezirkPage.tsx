@@ -36,7 +36,7 @@ const BezirkPage = () => {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: `BSR Wohnungsauflösung Berlin ${bezirk.name}`,
-          url: `https://wohnungsausloesung-bsr.de/standorte/${bezirk.slug}`,
+          url: `https://wohnungsaufloesung-bsr.de/standorte/${bezirk.slug}`,
           areaServed: `Berlin ${bezirk.name}`,
           address: { "@type": "PostalAddress", addressLocality: "Berlin", addressCountry: "DE" },
         }}

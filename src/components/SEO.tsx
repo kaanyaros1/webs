@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const SITE_URL = "https://wohnungsausloesung-bsr.de";
+const SITE_URL = "https://wohnungsaufloesung-bsr.de";
 
 interface SEOProps {
   title: string;
