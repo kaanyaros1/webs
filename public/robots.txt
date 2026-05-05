@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wohnungsausloesung-bsr.de/sitemap.xml
+Sitemap: https://wohnungsaufloesung-bsr.de/sitemap.xml
