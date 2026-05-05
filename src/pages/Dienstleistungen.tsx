@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Truck, Shield, Clock, Star, Recycle, Home, Sparkles, Wrench, Leaf, Package, Building2, Lock, Calendar } from "lucide-react";
 
 const services = [
@@ -21,6 +22,10 @@ const services = [
 
 const Dienstleistungen = () => (
   <Layout>
+    <SEO
+      title="Dienstleistungen – Wohnungsauflösung & Entrümpelung Berlin | BSR"
+      description="Unsere Leistungen in Berlin: Wohnungsauflösung, Entrümpelung, Haushaltsauflösung, Nachlassräumung, Sperrmüll, Endreinigung – schnell & zum Festpreis."
+    />
     <section className="py-20">
       <div className="container">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Unsere Dienstleistungen</h1>

@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 
@@ -27,6 +28,10 @@ const ortsteile = [
 
 const Standorte = () => (
   <Layout>
+    <SEO
+      title="Standorte Berlin – Wohnungsauflösung in allen Bezirken | BSR"
+      description="Wohnungsauflösung & Entrümpelung in allen 12 Berliner Bezirken: Mitte, Pankow, Neukölln, Charlottenburg, Spandau u.v.m. Schnell & zum Festpreis."
+    />
     <section className="bg-secondary text-secondary-foreground py-12 md:py-16">
       <div className="container">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4">

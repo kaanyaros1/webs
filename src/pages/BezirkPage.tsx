@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { bezirkeData } from "@/data/bezirke";
 import { Phone, MessageCircle, Mail, MapPin, CheckCircle, Star, Clock, ChevronRight } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -13,22 +14,11 @@ const BezirkPage = () => {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  useEffect(() => {
-    if (!bezirk) return;
-    document.title = bezirk.metaTitle;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", bezirk.metaDescription);
-    else {
-      const m = document.createElement("meta");
-      m.name = "description";
-      m.content = bezirk.metaDescription;
-      document.head.appendChild(m);
-    }
-  }, [bezirk]);
 
   if (!bezirk) {
     return (
       <Layout>
+        <SEO title="Bezirk nicht gefunden – BSR Wohnungsauflösung Berlin" description="Diese Bezirksseite existiert nicht." noindex />
         <div className="container py-20 text-center">
           <h1 className="text-3xl font-bold mb-4">Bezirk nicht gefunden</h1>
           <Link to="/standorte" className="text-primary hover:underline">Zurück zu allen Standorten</Link>
@@ -39,6 +29,18 @@ const BezirkPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title={bezirk.metaTitle}
+        description={bezirk.metaDescription}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: `BSR Wohnungsauflösung Berlin ${bezirk.name}`,
+          url: `https://wohnungsausloesung-bsr.de/standorte/${bezirk.slug}`,
+          areaServed: `Berlin ${bezirk.name}`,
+          address: { "@type": "PostalAddress", addressLocality: "Berlin", addressCountry: "DE" },
+        }}
+      />
       {/* HERO */}
       <section className="bg-primary text-primary-foreground py-12 md:py-20">
         <div className="container">

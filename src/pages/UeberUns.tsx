@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Users, Award, ThumbsUp, Leaf } from "lucide-react";
 
 const stats = [
@@ -10,6 +11,10 @@ const stats = [
 
 const UeberUns = () => (
   <Layout>
+    <SEO
+      title="Über uns – BSR Wohnungsauflösung Berlin | Erfahrenes Team"
+      description="Lernen Sie BSR Wohnungsauflösung Berlin kennen: über 10 Jahre Erfahrung, 500+ zufriedene Kunden, Festpreisgarantie und umweltgerechte Entsorgung."
+    />
     <section className="py-20">
       <div className="container">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">Über uns</h1>

@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Calendar, ArrowLeft, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { blogArticles } from "@/data/blogArticles";
@@ -11,6 +12,7 @@ const BlogArticle = () => {
   if (!article) {
     return (
       <Layout>
+        <SEO title="Artikel nicht gefunden – BSR Wohnungsauflösung Berlin" description="Dieser Blogbeitrag existiert leider nicht." noindex />
         <section className="py-20">
           <div className="container text-center">
             <h1 className="text-3xl font-bold mb-4">Artikel nicht gefunden</h1>
@@ -28,6 +30,19 @@ const BlogArticle = () => {
 
   return (
     <Layout>
+      <SEO
+        title={`${article.title} | BSR Wohnungsauflösung Berlin`}
+        description={article.excerpt}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: article.title,
+          description: article.excerpt,
+          datePublished: article.date,
+          author: { "@type": "Organization", name: "BSR Wohnungsauflösung Berlin" },
+          image: typeof article.image === "string" ? article.image : undefined,
+        }}
+      />
       {/* Hero */}
       <section className="relative bg-primary py-16 md:py-24">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80" />

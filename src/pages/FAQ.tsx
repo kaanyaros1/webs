@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
@@ -13,6 +14,19 @@ const faqs = [
 
 const FAQ = () => (
   <Layout>
+    <SEO
+      title="FAQ – Häufige Fragen zur Wohnungsauflösung Berlin | BSR"
+      description="Antworten auf häufige Fragen zu Wohnungsauflösung, Entrümpelung & Haushaltsauflösung in Berlin: Kosten, Ablauf, Termine & besenreine Übergabe."
+      jsonLd={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }}
+    />
     <section className="py-20">
       <div className="container max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Häufig gestellte Fragen</h1>

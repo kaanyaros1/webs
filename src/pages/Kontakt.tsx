@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,6 +14,10 @@ const Kontakt = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Kontakt – BSR Wohnungsauflösung Berlin | Kostenlose Beratung"
+        description="Kontaktieren Sie BSR Wohnungsauflösung Berlin: Tel. 030 208 482 810, WhatsApp oder per Formular. Kostenlose Besichtigung & Festpreis-Angebot."
+      />
       <section className="py-20">
         <div className="container">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Kontakt</h1>

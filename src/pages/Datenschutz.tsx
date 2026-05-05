@@ -1,7 +1,12 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Datenschutz = () => (
   <Layout>
+    <SEO
+      title="Datenschutzerklärung – BSR Wohnungsauflösung Berlin"
+      description="Datenschutzerklärung der BSR Wohnungsauflösung Berlin gemäß DSGVO – Informationen zur Erhebung und Verarbeitung Ihrer Daten."
+    />
     <section className="py-20">
       <div className="container max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-8">Datenschutzerklärung</h1>

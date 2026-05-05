@@ -1,7 +1,12 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Impressum = () => (
   <Layout>
+    <SEO
+      title="Impressum – BSR Wohnungsauflösung Berlin"
+      description="Impressum & rechtliche Angaben gemäß § 5 TMG der BSR Wohnungsauflösung Berlin."
+    />
     <section className="py-20">
       <div className="container max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-8">Impressum</h1>

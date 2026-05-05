@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, ArrowRight, CheckCircle, Star, ClipboardList, Eye, Truck, Sparkles, Home, Package, Trash2, Users, MapPin } from "lucide-react";
 import heroImg from "@/assets/hero-entruempelung.jpg";
@@ -33,6 +34,30 @@ const reviews = [
 
 const Index = () => (
   <Layout>
+    <SEO
+      title="BSR Wohnungsauflösung Berlin – Schnell, zuverlässig & Festpreis"
+      description="Professionelle Wohnungsauflösung & Entrümpelung in Berlin. Schnell vor Ort, transparente Festpreise, besenreine Übergabe. Jetzt kostenlos anfragen!"
+      jsonLd={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "BSR Wohnungsauflösung Berlin",
+        image: "https://wohnungsausloesung-bsr.de/og-image-v3.jpg",
+        "@id": "https://wohnungsausloesung-bsr.de/",
+        url: "https://wohnungsausloesung-bsr.de/",
+        telephone: "+4930208482810",
+        priceRange: "€€",
+        description: "Professionelle Wohnungsauflösung & Entrümpelung in Berlin. Schnell, zuverlässig, Festpreis.",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Seestraße 40",
+          postalCode: "13353",
+          addressLocality: "Berlin",
+          addressCountry: "DE",
+        },
+        areaServed: "Berlin",
+        aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "127" },
+      }}
+    />
     {/* 1. HERO */}
     <section className="relative overflow-hidden bg-primary">
       <div className="absolute inset-0">

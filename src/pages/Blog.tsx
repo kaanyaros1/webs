@@ -1,10 +1,15 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { blogArticles } from "@/data/blogArticles";
 
 const Blog = () => (
   <Layout>
+    <SEO
+      title="Blog – Tipps & Ratgeber Wohnungsauflösung Berlin | BSR"
+      description="Aktuelle Tipps, Ratgeber und Neuigkeiten rund um Wohnungsauflösung, Entrümpelung und Haushaltsauflösung in Berlin – vom Profi-Team von BSR."
+    />
     {/* Hero Banner */}
     <section className="relative bg-primary py-16 md:py-24">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80" />
